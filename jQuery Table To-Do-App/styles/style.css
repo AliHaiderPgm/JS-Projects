@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+#navBg{
+    background: #222;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+main{
+    flex: 1 0 auto;
+}
+.data{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 70%;
+    border-radius: 7px;
+}
+#tab{
+    background: #fff;
+    width: 80%;
+    padding: 3.5rem 0 0;
+}
+#txtArea{
+    resize: none;
+}
+.overlay{
+    background: #f6f7f8;
+}
+.maxTable{
+    max-width: 100vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 7px;
+    overflow-x: auto;
+}
+.foot{
+    background: #222;
+    color: #f6f7f8;
+    padding: 7px 0px;
+}
+#updateBtnDiv{
+    display: none;
+}
