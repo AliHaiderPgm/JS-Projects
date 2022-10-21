@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Media query -->
+    <link rel="stylesheet" href="./CSS/media.css">
+
+    <!-- JS -->
+    <script src="./Js/utilities.js" defer></script>
+    <script src="./Js/script.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+
+</head>
+
+<body>
+    <!-- Head Section -->
+    <header>
+        <div class="navbar">
+            <div class="logoDiv">
+                <p class="logoText">H</p>
+            </div>
+            <div class="hamburger">
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+            </div>
+            <div class="nav-links">
+                <a href="cards.html">My List</a>
+                <span class="greet"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Flex wrapper -->
+    <div class="wrappper">
+        <!-- Main Section -->
+        <main>
+            <div class="formMain">
+                <div class="formBody">
+                    <div class="container">
+                        <p>Add <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                    </div>
+                    <hr>
+                    <form action="#">
+                        <div class="section">
+                            <label for="title" class="label">Add Title</label><br>
+                            <input type="text" id="title" class="input">
+                        </div>
+                        <div class="section">
+                            <label for="txtArea" class="label">Add Description</label><br>
+                            <textarea id="txtArea" class="input"></textarea>
+                        </div>
+                        <div class="section">
+                            <button class="btn" id="btn" onclick="submitForm()">Add Task</button>
+                            <button class="btn" id="btn" onclick="clear()">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Year-->
+        <footer>
+            <div class="max-width">
+                <div class="content">
+                    <p>&copy; <span id="year"></span>. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Wrapper end -->
+    </div>
+</body>
+
+</html>

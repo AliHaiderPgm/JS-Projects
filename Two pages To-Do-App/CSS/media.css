@@ -1,0 +1,68 @@
+@media screen and (max-width:803px) {
+    .navbar {
+        z-index: 4;
+        position: relative;
+    }
+
+    .logoDiv {
+        z-index: 3;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--black);
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        top: -770px;
+        height: 60vh;
+        width: 100vw;
+        transition: top 0.5s ease;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+    .navbar .nav-links.activeNavLinks {
+        top: 70px;
+    }
+
+
+    .navbar .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 2;
+        position: absolute;
+        right: 30px;
+    }
+
+    .navbar .hamburger .lines {
+        height: 2px;
+        width: 100%;
+        background: var(--white);
+        transition: all 0.4s ease;
+    }
+
+    .hamburgerActive .lines:first-child {
+        transform: translate(0px, 12px) rotate(-45deg);
+    }
+
+    .hamburgerActive .lines:nth-child(2) {
+        transform: scale(0);
+    }
+
+    .hamburgerActive .lines:last-child {
+        transform: translate(0px, -12px) rotate(45deg);
+    }
+    .section .input{
+    min-width: 74vw;
+    }
+}
